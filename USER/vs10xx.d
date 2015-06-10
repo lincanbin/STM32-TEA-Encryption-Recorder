@@ -1,0 +1,2 @@
+vs10xx.o: ..\HARDWARE\VS10XX\VS10XX.c
+vs10xx.o: ..\HARDWARE\VS10XX\vs10XX.h

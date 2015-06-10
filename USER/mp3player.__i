@@ -1,0 +1,4 @@
+-c --device DARMSTM -g -O0 --apcs=interwork 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-o "mp3player.o" --depend "mp3player.d" "..\APP\mp3player.c"

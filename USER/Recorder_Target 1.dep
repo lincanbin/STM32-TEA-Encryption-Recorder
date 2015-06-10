@@ -1,0 +1,81 @@
+Dependencies for Project 'Recorder', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x505FCBC2)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "main.o" --depend "main.d")
+F (.\stm32f10x_it.c)(0x4EBEACB0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_it.o" --depend "stm32f10x_it.d")
+I (stm32f10x_it.h)(0x4D99A426)
+I (stm32f10x.h)(0x4D783CB4)
+F (.\system_stm32f10x.c)(0x504591AE)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "system_stm32f10x.o" --depend "system_stm32f10x.d")
+I (stm32f10x.h)(0x4D783CB4)
+F (..\HARDWARE\LED\led.c)(0x50516B60)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "led.o" --depend "led.d")
+I (..\HARDWARE\LED\led.h)(0x50513ABC)
+F (..\HARDWARE\KEY\key.c)(0x505185A0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "key.o" --depend "key.d")
+I (..\HARDWARE\KEY\key.h)(0x50518AA2)
+F (..\HARDWARE\TPAD\tpad.c)(0x5191B4CC)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "tpad.o" --depend "tpad.d")
+I (..\HARDWARE\TPAD\tpad.h)(0x5053EACA)
+F (..\HARDWARE\LCD\lcd.c)(0x5305D88A)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "lcd.o" --depend "lcd.d")
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+F (..\HARDWARE\SPI\spi.c)(0x5070F76C)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "spi.o" --depend "spi.d")
+I (..\HARDWARE\SPI\spi.h)(0x505BFD14)
+F (..\HARDWARE\FLASH\flash.c)(0x505BF584)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "flash.o" --depend "flash.d")
+I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
+F (..\HARDWARE\SRAM\sram.c)(0x505962DE)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "sram.o" --depend "sram.d")
+I (..\HARDWARE\SRAM\sram.h)(0x505955F4)
+F (..\HARDWARE\SD\MMC_SD.C)(0x505A7874)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "mmc_sd.o" --depend "mmc_sd.d")
+F (..\HARDWARE\VS10XX\VS10XX.c)(0x505BF382)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "vs10xx.o" --depend "vs10xx.d")
+I (..\HARDWARE\VS10XX\vs10XX.h)(0x505BF382)
+F (..\HARDWARE\AUDIOSEL\audiosel.c)(0x505BF52A)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "audiosel.o" --depend "audiosel.d")
+I (..\HARDWARE\AUDIOSEL\audiosel.h)(0x510C7AEC)
+F (..\SYSTEM\delay\delay.c)(0x50513B74)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "delay.o" --depend "delay.d")
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+F (..\SYSTEM\sys\sys.c)(0x5055B57C)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "sys.o" --depend "sys.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+F (..\SYSTEM\usart\usart.c)(0x50508AC8)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usart.o" --depend "usart.d")
+F (..\CORE\core_cm3.c)(0x4C0C587E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "core_cm3.o" --depend "core_cm3.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+F (..\CORE\startup_stm32f10x_hd.s)(0x4D783CDE)(--device DARMSTM -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include --list ".\startup_stm32f10x_hd.lst" --xref -o ".\startup_stm32f10x_hd.o" --depend ".\startup_stm32f10x_hd.d")
+F (..\STM32F10x_FWLib\src\misc.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "misc.o" --depend "misc.d")
+F (..\STM32F10x_FWLib\src\stm32f10x_fsmc.c)(0x5039863E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_fsmc.o" --depend "stm32f10x_fsmc.d")
+F (..\STM32F10x_FWLib\src\stm32f10x_gpio.c)(0x4D79EEC6)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_gpio.o" --depend "stm32f10x_gpio.d")
+F (..\STM32F10x_FWLib\src\stm32f10x_pwr.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_pwr.o" --depend "stm32f10x_pwr.d")
+F (..\STM32F10x_FWLib\src\stm32f10x_rcc.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_rcc.o" --depend "stm32f10x_rcc.d")
+F (..\STM32F10x_FWLib\src\stm32f10x_spi.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_spi.o" --depend "stm32f10x_spi.d")
+F (..\STM32F10x_FWLib\src\stm32f10x_tim.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_tim.o" --depend "stm32f10x_tim.d")
+F (..\STM32F10x_FWLib\src\stm32f10x_usart.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_usart.o" --depend "stm32f10x_usart.d")
+F (..\MALLOC\malloc.c)(0x505975D0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "malloc.o" --depend "malloc.d")
+I (..\MALLOC\malloc.h)(0x503CC504)
+F (..\FATFS\src\diskio.c)(0x505A865E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "diskio.o" --depend "diskio.d")
+F (..\FATFS\src\ff.c)(0x505BD4B0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "ff.o" --depend "ff.d")
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\src\diskio.h)(0x4D21CB12)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdarg.h)(0x50F9614E)
+F (..\FATFS\exfuns\exfuns.c)(0x505A867A)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "exfuns.o" --depend "exfuns.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x50F96150)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+F (..\FATFS\exfuns\fattester.c)(0x505A86AE)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "fattester.o" --depend "fattester.d")
+I (..\FATFS\exfuns\fattester.h)(0x503CCFEE)
+F (..\FATFS\exfuns\mycc936.c)(0x4E8454E4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "mycc936.o" --depend "mycc936.d")
+F (..\USMART\usmart.c)(0x529B4A34)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usmart.o" --depend "usmart.d")
+I (..\USMART\usmart.h)(0x528CCEDC)
+I (..\USMART\usmart_str.h)(0x528CCEDC)
+F (..\USMART\usmart_config.c)(0x52983FB0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usmart_config.o" --depend "usmart_config.d")
+I (..\USMART\usmart.h)(0x528CCEDC)
+I (..\USMART\usmart_str.h)(0x528CCEDC)
+F (..\USMART\usmart_str.c)(0x528CCEDC)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usmart_str.o" --depend "usmart_str.d")
+I (..\USMART\usmart_str.h)(0x528CCEDC)
+F (..\TEXT\fontupd.c)(0x505A96FA)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "fontupd.o" --depend "fontupd.d")
+I (..\TEXT\fontupd.h)(0x505A9714)
+F (..\TEXT\text.c)(0x505A973E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "text.o" --depend "text.d")
+F (..\PICTURE\bmp.c)(0x52906F8E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "bmp.o" --depend "bmp.d")
+I (..\PICTURE\piclib.h)(0x528F54E4)
+F (..\PICTURE\gif.c)(0x528F544C)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "gif.o" --depend "gif.d")
+I (..\PICTURE\piclib.h)(0x528F54E4)
+F (..\PICTURE\piclib.c)(0x528F52A4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "piclib.o" --depend "piclib.d")
+I (..\PICTURE\piclib.h)(0x528F54E4)
+F (..\PICTURE\tjpgd.c)(0x52FF829E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "tjpgd.o" --depend "tjpgd.d")
+I (..\PICTURE\tjpgd.h)(0x528F544C)
+I (..\PICTURE\integer.h)(0x4BD31212)
+F (..\APP\mp3player.c)(0x505BF2F6)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "mp3player.o" --depend "mp3player.d")
+I (..\APP\mp3player.h)(0x505BF2F6)
+F (..\APP\recorder.c)(0x505FC468)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "recorder.o" --depend "recorder.d")
+I (..\APP\recorder.h)(0x505FC468)

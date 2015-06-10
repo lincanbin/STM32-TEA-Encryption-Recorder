@@ -1,0 +1,65 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+Target (Target 1), 0x0004 // Tools: '<Î´Ö¸¶¨>'
+
+Group (USER)
+Group (HARDWARE)
+Group (SYSTEM)
+Group (CORE)
+Group (FWLib)
+Group (MALLOC)
+Group (FATFS)
+Group (USMART)
+Group (TEXT)
+Group (PICTURE)
+Group (APP)
+
+File 1,1,<.\main.c><main.c>
+File 1,1,<.\stm32f10x_it.c><stm32f10x_it.c>
+File 1,1,<.\system_stm32f10x.c><system_stm32f10x.c>
+File 2,1,<..\HARDWARE\LED\led.c><led.c>
+File 2,1,<..\HARDWARE\KEY\key.c><key.c>
+File 2,1,<..\HARDWARE\TPAD\tpad.c><tpad.c>
+File 2,1,<..\HARDWARE\LCD\lcd.c><lcd.c>
+File 2,1,<..\HARDWARE\SPI\spi.c><spi.c>
+File 2,1,<..\HARDWARE\FLASH\flash.c><flash.c>
+File 2,1,<..\HARDWARE\SRAM\sram.c><sram.c>
+File 2,1,<..\HARDWARE\SD\MMC_SD.C><MMC_SD.C>
+File 2,1,<..\HARDWARE\VS10XX\VS10XX.c><VS10XX.c>
+File 2,1,<..\HARDWARE\AUDIOSEL\audiosel.c><audiosel.c>
+File 3,1,<..\SYSTEM\delay\delay.c><delay.c>
+File 3,1,<..\SYSTEM\sys\sys.c><sys.c>
+File 3,1,<..\SYSTEM\usart\usart.c><usart.c>
+File 4,1,<..\CORE\core_cm3.c><core_cm3.c>
+File 4,2,<..\CORE\startup_stm32f10x_hd.s><startup_stm32f10x_hd.s>
+File 5,1,<..\STM32F10x_FWLib\src\misc.c><misc.c>
+File 5,1,<..\STM32F10x_FWLib\src\stm32f10x_fsmc.c><stm32f10x_fsmc.c>
+File 5,1,<..\STM32F10x_FWLib\src\stm32f10x_gpio.c><stm32f10x_gpio.c>
+File 5,1,<..\STM32F10x_FWLib\src\stm32f10x_pwr.c><stm32f10x_pwr.c>
+File 5,1,<..\STM32F10x_FWLib\src\stm32f10x_rcc.c><stm32f10x_rcc.c>
+File 5,1,<..\STM32F10x_FWLib\src\stm32f10x_spi.c><stm32f10x_spi.c>
+File 5,1,<..\STM32F10x_FWLib\src\stm32f10x_tim.c><stm32f10x_tim.c>
+File 5,1,<..\STM32F10x_FWLib\src\stm32f10x_usart.c><stm32f10x_usart.c>
+File 6,1,<..\MALLOC\malloc.c><malloc.c>
+File 7,1,<..\FATFS\src\diskio.c><diskio.c>
+File 7,1,<..\FATFS\src\ff.c><ff.c>
+File 7,1,<..\FATFS\exfuns\exfuns.c><exfuns.c>
+File 7,1,<..\FATFS\exfuns\fattester.c><fattester.c>
+File 7,1,<..\FATFS\exfuns\mycc936.c><mycc936.c>
+File 8,1,<..\USMART\usmart.c><usmart.c>
+File 8,1,<..\USMART\usmart_config.c><usmart_config.c>
+File 8,1,<..\USMART\usmart_str.c><usmart_str.c>
+File 9,1,<..\TEXT\fontupd.c><fontupd.c>
+File 9,1,<..\TEXT\text.c><text.c>
+File 10,1,<..\PICTURE\bmp.c><bmp.c>
+File 10,1,<..\PICTURE\gif.c><gif.c>
+File 10,1,<..\PICTURE\piclib.c><piclib.c>
+File 10,1,<..\PICTURE\tjpgd.c><tjpgd.c>
+File 11,1,<..\APP\mp3player.c><mp3player.c>
+File 11,1,<..\APP\recorder.c><recorder.c>
+
+
+Options 1,0,0  // Target 'Target 1'
+EndOpt
+
