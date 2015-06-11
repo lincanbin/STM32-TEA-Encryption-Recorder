@@ -1,81 +1,849 @@
 Dependencies for Project 'Recorder', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x505FCBC2)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "main.o" --depend "main.d")
-F (.\stm32f10x_it.c)(0x4EBEACB0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_it.o" --depend "stm32f10x_it.d")
+F (.\main.c)(0x5577A0EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\main.o" --omf_browse "..\OBJ\main.crf" --depend "..\OBJ\main.d")
+I (..\HARDWARE\LED\led.h)(0x50513ABC)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+I (..\HARDWARE\KEY\key.h)(0x50518AA2)
+I (..\HARDWARE\TPAD\tpad.h)(0x5053EACA)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
+I (..\HARDWARE\SRAM\sram.h)(0x505955F4)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x50F96150)
+I (..\HARDWARE\SD\mmc_sd.h)(0x505A7874)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\TEXT\fontupd.h)(0x505A9714)
+I (..\TEXT\text.h)(0x505A974C)
+I (..\PICTURE\piclib.h)(0x528F54E4)
+I (..\PICTURE\bmp.h)(0x52906F8E)
+I (..\PICTURE\tjpgd.h)(0x528F544C)
+I (..\PICTURE\integer.h)(0x4BD31212)
+I (..\PICTURE\gif.h)(0x528F544C)
+I (..\USMART\usmart.h)(0x528CCEDC)
+I (..\USMART\usmart_str.h)(0x528CCEDC)
+I (..\FATFS\exfuns\fattester.h)(0x503CCFEE)
+I (..\HARDWARE\VS10XX\vs10xx.h)(0x505BF382)
+I (..\APP\mp3player.h)(0x505BF2F6)
+I (..\HARDWARE\AUDIOSEL\audiosel.h)(0x510C7AEC)
+I (..\APP\recorder.h)(0x505FC468)
+F (.\stm32f10x_it.c)(0x4EBEACB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_it.o" --omf_browse "..\OBJ\stm32f10x_it.crf" --depend "..\OBJ\stm32f10x_it.d")
 I (stm32f10x_it.h)(0x4D99A426)
 I (stm32f10x.h)(0x4D783CB4)
-F (.\system_stm32f10x.c)(0x504591AE)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "system_stm32f10x.o" --depend "system_stm32f10x.d")
-I (stm32f10x.h)(0x4D783CB4)
-F (..\HARDWARE\LED\led.c)(0x50516B60)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "led.o" --depend "led.d")
-I (..\HARDWARE\LED\led.h)(0x50513ABC)
-F (..\HARDWARE\KEY\key.c)(0x505185A0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "key.o" --depend "key.d")
-I (..\HARDWARE\KEY\key.h)(0x50518AA2)
-F (..\HARDWARE\TPAD\tpad.c)(0x5191B4CC)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "tpad.o" --depend "tpad.d")
-I (..\HARDWARE\TPAD\tpad.h)(0x5053EACA)
-F (..\HARDWARE\LCD\lcd.c)(0x5305D88A)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "lcd.o" --depend "lcd.d")
-I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
-F (..\HARDWARE\SPI\spi.c)(0x5070F76C)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "spi.o" --depend "spi.d")
-I (..\HARDWARE\SPI\spi.h)(0x505BFD14)
-F (..\HARDWARE\FLASH\flash.c)(0x505BF584)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "flash.o" --depend "flash.d")
-I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
-F (..\HARDWARE\SRAM\sram.c)(0x505962DE)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "sram.o" --depend "sram.d")
-I (..\HARDWARE\SRAM\sram.h)(0x505955F4)
-F (..\HARDWARE\SD\MMC_SD.C)(0x505A7874)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "mmc_sd.o" --depend "mmc_sd.d")
-F (..\HARDWARE\VS10XX\VS10XX.c)(0x505BF382)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "vs10xx.o" --depend "vs10xx.d")
-I (..\HARDWARE\VS10XX\vs10XX.h)(0x505BF382)
-F (..\HARDWARE\AUDIOSEL\audiosel.c)(0x505BF52A)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "audiosel.o" --depend "audiosel.d")
-I (..\HARDWARE\AUDIOSEL\audiosel.h)(0x510C7AEC)
-F (..\SYSTEM\delay\delay.c)(0x50513B74)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "delay.o" --depend "delay.d")
-I (..\SYSTEM\delay\delay.h)(0x50513B7A)
-F (..\SYSTEM\sys\sys.c)(0x5055B57C)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "sys.o" --depend "sys.d")
-I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
-F (..\SYSTEM\usart\usart.c)(0x50508AC8)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usart.o" --depend "usart.d")
-F (..\CORE\core_cm3.c)(0x4C0C587E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "core_cm3.o" --depend "core_cm3.d")
+I (..\CORE\core_cm3.h)(0x4D523B58)
 I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-F (..\CORE\startup_stm32f10x_hd.s)(0x4D783CDE)(--device DARMSTM -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include --list ".\startup_stm32f10x_hd.lst" --xref -o ".\startup_stm32f10x_hd.o" --depend ".\startup_stm32f10x_hd.d")
-F (..\STM32F10x_FWLib\src\misc.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "misc.o" --depend "misc.d")
-F (..\STM32F10x_FWLib\src\stm32f10x_fsmc.c)(0x5039863E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_fsmc.o" --depend "stm32f10x_fsmc.d")
-F (..\STM32F10x_FWLib\src\stm32f10x_gpio.c)(0x4D79EEC6)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_gpio.o" --depend "stm32f10x_gpio.d")
-F (..\STM32F10x_FWLib\src\stm32f10x_pwr.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_pwr.o" --depend "stm32f10x_pwr.d")
-F (..\STM32F10x_FWLib\src\stm32f10x_rcc.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_rcc.o" --depend "stm32f10x_rcc.d")
-F (..\STM32F10x_FWLib\src\stm32f10x_spi.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_spi.o" --depend "stm32f10x_spi.d")
-F (..\STM32F10x_FWLib\src\stm32f10x_tim.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_tim.o" --depend "stm32f10x_tim.d")
-F (..\STM32F10x_FWLib\src\stm32f10x_usart.c)(0x4D783BB4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "stm32f10x_usart.o" --depend "stm32f10x_usart.d")
-F (..\MALLOC\malloc.c)(0x505975D0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "malloc.o" --depend "malloc.d")
+I (system_stm32f10x.h)(0x4D783CAA)
+I (stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (.\system_stm32f10x.c)(0x504591AE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\system_stm32f10x.o" --omf_browse "..\OBJ\system_stm32f10x.crf" --depend "..\OBJ\system_stm32f10x.d")
+I (stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (system_stm32f10x.h)(0x4D783CAA)
+I (stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\HARDWARE\LED\led.c)(0x50516B60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\led.o" --omf_browse "..\OBJ\led.crf" --depend "..\OBJ\led.d")
+I (..\HARDWARE\LED\led.h)(0x50513ABC)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\HARDWARE\KEY\key.c)(0x505185A0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\key.o" --omf_browse "..\OBJ\key.crf" --depend "..\OBJ\key.d")
+I (..\HARDWARE\KEY\key.h)(0x50518AA2)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+F (..\HARDWARE\TPAD\tpad.c)(0x5191B4CC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\tpad.o" --omf_browse "..\OBJ\tpad.crf" --depend "..\OBJ\tpad.d")
+I (..\HARDWARE\TPAD\tpad.h)(0x5053EACA)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+F (..\HARDWARE\LCD\lcd.c)(0x5305D88A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\lcd.o" --omf_browse "..\OBJ\lcd.crf" --depend "..\OBJ\lcd.d")
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\HARDWARE\LCD\font.h)(0x50386A44)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+F (..\HARDWARE\SPI\spi.c)(0x5070F76C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\spi.o" --omf_browse "..\OBJ\spi.crf" --depend "..\OBJ\spi.d")
+I (..\HARDWARE\SPI\spi.h)(0x505BFD14)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+F (..\HARDWARE\FLASH\flash.c)(0x505BF584)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\flash.o" --omf_browse "..\OBJ\flash.crf" --depend "..\OBJ\flash.d")
+I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\SPI\spi.h)(0x505BFD14)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+F (..\HARDWARE\SRAM\sram.c)(0x505962DE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\sram.o" --omf_browse "..\OBJ\sram.crf" --depend "..\OBJ\sram.d")
+I (..\HARDWARE\SRAM\sram.h)(0x505955F4)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+F (..\HARDWARE\SD\MMC_SD.C)(0x505A7874)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\mmc_sd.o" --omf_browse "..\OBJ\mmc_sd.crf" --depend "..\OBJ\mmc_sd.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\SD\mmc_sd.h)(0x505A7874)
+I (..\HARDWARE\SPI\spi.h)(0x505BFD14)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+F (..\HARDWARE\VS10XX\VS10XX.c)(0x557863D2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\vs10xx.o" --omf_browse "..\OBJ\vs10xx.crf" --depend "..\OBJ\vs10xx.d")
+I (..\HARDWARE\VS10XX\vs10XX.h)(0x505BF382)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+I (..\HARDWARE\SD\mmc_sd.h)(0x505A7874)
+I (..\HARDWARE\SPI\spi.h)(0x505BFD14)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+F (..\HARDWARE\AUDIOSEL\audiosel.c)(0x505BF52A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\audiosel.o" --omf_browse "..\OBJ\audiosel.crf" --depend "..\OBJ\audiosel.d")
+I (..\HARDWARE\AUDIOSEL\audiosel.h)(0x510C7AEC)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\delay\delay.c)(0x50513B74)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\delay.o" --omf_browse "..\OBJ\delay.crf" --depend "..\OBJ\delay.d")
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\sys\sys.c)(0x5055B57C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\sys.o" --omf_browse "..\OBJ\sys.crf" --depend "..\OBJ\sys.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\usart\usart.c)(0x50508AC8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\usart.o" --omf_browse "..\OBJ\usart.crf" --depend "..\OBJ\usart.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+F (..\CORE\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\core_cm3.o" --omf_browse "..\OBJ\core_cm3.crf" --depend "..\OBJ\core_cm3.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+F (..\CORE\startup_stm32f10x_hd.s)(0x4D783CDE)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x --list ".\startup_stm32f10x_hd.lst" --xref -o "..\OBJ\startup_stm32f10x_hd.o" --depend "..\OBJ\startup_stm32f10x_hd.d")
+F (..\STM32F10x_FWLib\src\misc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\misc.o" --omf_browse "..\OBJ\misc.crf" --depend "..\OBJ\misc.d")
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_fsmc.c)(0x5039863E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_fsmc.o" --omf_browse "..\OBJ\stm32f10x_fsmc.crf" --depend "..\OBJ\stm32f10x_fsmc.d")
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_gpio.c)(0x4D79EEC6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_gpio.o" --omf_browse "..\OBJ\stm32f10x_gpio.crf" --depend "..\OBJ\stm32f10x_gpio.d")
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_pwr.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_pwr.o" --omf_browse "..\OBJ\stm32f10x_pwr.crf" --depend "..\OBJ\stm32f10x_pwr.d")
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_rcc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_rcc.o" --omf_browse "..\OBJ\stm32f10x_rcc.crf" --depend "..\OBJ\stm32f10x_rcc.d")
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_spi.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_spi.o" --omf_browse "..\OBJ\stm32f10x_spi.crf" --depend "..\OBJ\stm32f10x_spi.d")
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_tim.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_tim.o" --omf_browse "..\OBJ\stm32f10x_tim.crf" --depend "..\OBJ\stm32f10x_tim.d")
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_usart.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_usart.o" --omf_browse "..\OBJ\stm32f10x_usart.crf" --depend "..\OBJ\stm32f10x_usart.d")
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\MALLOC\malloc.c)(0x505975D0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\malloc.o" --omf_browse "..\OBJ\malloc.crf" --depend "..\OBJ\malloc.d")
 I (..\MALLOC\malloc.h)(0x503CC504)
-F (..\FATFS\src\diskio.c)(0x505A865E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "diskio.o" --depend "diskio.d")
-F (..\FATFS\src\ff.c)(0x505BD4B0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "ff.o" --depend "ff.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FATFS\src\diskio.c)(0x505A865E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\diskio.o" --omf_browse "..\OBJ\diskio.crf" --depend "..\OBJ\diskio.d")
+I (..\HARDWARE\SD\mmc_sd.h)(0x505A7874)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FATFS\src\diskio.h)(0x4D21CB12)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
+I (..\MALLOC\malloc.h)(0x503CC504)
+F (..\FATFS\src\ff.c)(0x505BD4B0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\ff.o" --omf_browse "..\OBJ\ff.crf" --depend "..\OBJ\ff.d")
 I (..\FATFS\src\ff.h)(0x505BD406)
 I (..\FATFS\src\integer.h)(0x4BD31212)
 I (..\FATFS\src\ffconf.h)(0x50236DB2)
 I (..\FATFS\src\diskio.h)(0x4D21CB12)
 I (C:\Keil\ARM\ARMCC\bin\..\include\stdarg.h)(0x50F9614E)
-F (..\FATFS\exfuns\exfuns.c)(0x505A867A)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "exfuns.o" --depend "exfuns.d")
+F (..\FATFS\exfuns\exfuns.c)(0x505A867A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\exfuns.o" --omf_browse "..\OBJ\exfuns.crf" --depend "..\OBJ\exfuns.d")
 I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x50F96150)
 I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
-F (..\FATFS\exfuns\fattester.c)(0x505A86AE)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "fattester.o" --depend "fattester.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
 I (..\FATFS\exfuns\fattester.h)(0x503CCFEE)
-F (..\FATFS\exfuns\mycc936.c)(0x4E8454E4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "mycc936.o" --depend "mycc936.d")
-F (..\USMART\usmart.c)(0x529B4A34)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usmart.o" --depend "usmart.d")
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+F (..\FATFS\exfuns\fattester.c)(0x505A86AE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\fattester.o" --omf_browse "..\OBJ\fattester.crf" --depend "..\OBJ\fattester.d")
+I (..\FATFS\exfuns\fattester.h)(0x503CCFEE)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\SD\mmc_sd.h)(0x505A7874)
 I (..\USMART\usmart.h)(0x528CCEDC)
 I (..\USMART\usmart_str.h)(0x528CCEDC)
-F (..\USMART\usmart_config.c)(0x52983FB0)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usmart_config.o" --depend "usmart_config.d")
-I (..\USMART\usmart.h)(0x528CCEDC)
-I (..\USMART\usmart_str.h)(0x528CCEDC)
-F (..\USMART\usmart_str.c)(0x528CCEDC)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "usmart_str.o" --depend "usmart_str.d")
-I (..\USMART\usmart_str.h)(0x528CCEDC)
-F (..\TEXT\fontupd.c)(0x505A96FA)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "fontupd.o" --depend "fontupd.d")
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x50F96150)
+F (..\FATFS\exfuns\mycc936.c)(0x4E8454E4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\mycc936.o" --omf_browse "..\OBJ\mycc936.crf" --depend "..\OBJ\mycc936.d")
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
 I (..\TEXT\fontupd.h)(0x505A9714)
-F (..\TEXT\text.c)(0x505A973E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "text.o" --depend "text.d")
-F (..\PICTURE\bmp.c)(0x52906F8E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "bmp.o" --depend "bmp.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
+F (..\USMART\usmart.c)(0x529B4A34)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\usmart.o" --omf_browse "..\OBJ\usmart.crf" --depend "..\OBJ\usmart.d")
+I (..\USMART\usmart.h)(0x528CCEDC)
+I (..\USMART\usmart_str.h)(0x528CCEDC)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+F (..\USMART\usmart_config.c)(0x52983FB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\usmart_config.o" --omf_browse "..\OBJ\usmart_config.crf" --depend "..\OBJ\usmart_config.d")
+I (..\USMART\usmart.h)(0x528CCEDC)
+I (..\USMART\usmart_str.h)(0x528CCEDC)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
 I (..\PICTURE\piclib.h)(0x528F54E4)
-F (..\PICTURE\gif.c)(0x528F544C)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "gif.o" --depend "gif.d")
-I (..\PICTURE\piclib.h)(0x528F54E4)
-F (..\PICTURE\piclib.c)(0x528F52A4)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "piclib.o" --depend "piclib.d")
-I (..\PICTURE\piclib.h)(0x528F54E4)
-F (..\PICTURE\tjpgd.c)(0x52FF829E)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "tjpgd.o" --depend "tjpgd.d")
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\PICTURE\bmp.h)(0x52906F8E)
 I (..\PICTURE\tjpgd.h)(0x528F544C)
 I (..\PICTURE\integer.h)(0x4BD31212)
-F (..\APP\mp3player.c)(0x505BF2F6)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "mp3player.o" --depend "mp3player.d")
+I (..\PICTURE\gif.h)(0x528F544C)
+I (..\HARDWARE\SRAM\sram.h)(0x505955F4)
+I (..\FATFS\exfuns\fattester.h)(0x503CCFEE)
+I (..\TEXT\text.h)(0x505A974C)
+I (..\TEXT\fontupd.h)(0x505A9714)
+I (..\HARDWARE\VS10XX\vs10xx.h)(0x505BF382)
+F (..\USMART\usmart_str.c)(0x528CCEDC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\usmart_str.o" --omf_browse "..\OBJ\usmart_str.crf" --depend "..\OBJ\usmart_str.d")
+I (..\USMART\usmart_str.h)(0x528CCEDC)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\USMART\usmart.h)(0x528CCEDC)
+F (..\TEXT\fontupd.c)(0x505A96FA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\fontupd.o" --omf_browse "..\OBJ\fontupd.crf" --depend "..\OBJ\fontupd.d")
+I (..\TEXT\fontupd.h)(0x505A9714)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\MALLOC\malloc.h)(0x503CC504)
+F (..\TEXT\text.c)(0x505A973E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\text.o" --omf_browse "..\OBJ\text.crf" --depend "..\OBJ\text.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\TEXT\fontupd.h)(0x505A9714)
+I (..\HARDWARE\FLASH\flash.h)(0x505BF596)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\TEXT\text.h)(0x505A974C)
+I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x50F96150)
+F (..\PICTURE\bmp.c)(0x52906F8E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\bmp.o" --omf_browse "..\OBJ\bmp.crf" --depend "..\OBJ\bmp.d")
+I (..\PICTURE\piclib.h)(0x528F54E4)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\PICTURE\bmp.h)(0x52906F8E)
+I (..\PICTURE\tjpgd.h)(0x528F544C)
+I (..\PICTURE\integer.h)(0x4BD31212)
+I (..\PICTURE\gif.h)(0x528F544C)
+I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x50F96150)
+F (..\PICTURE\gif.c)(0x528F544C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\gif.o" --omf_browse "..\OBJ\gif.crf" --depend "..\OBJ\gif.d")
+I (..\PICTURE\piclib.h)(0x528F54E4)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\PICTURE\bmp.h)(0x52906F8E)
+I (..\PICTURE\tjpgd.h)(0x528F544C)
+I (..\PICTURE\integer.h)(0x4BD31212)
+I (..\PICTURE\gif.h)(0x528F544C)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+F (..\PICTURE\piclib.c)(0x528F52A4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\piclib.o" --omf_browse "..\OBJ\piclib.crf" --depend "..\OBJ\piclib.d")
+I (..\PICTURE\piclib.h)(0x528F54E4)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\PICTURE\bmp.h)(0x52906F8E)
+I (..\PICTURE\tjpgd.h)(0x528F544C)
+I (..\PICTURE\integer.h)(0x4BD31212)
+I (..\PICTURE\gif.h)(0x528F544C)
+F (..\PICTURE\tjpgd.c)(0x52FF829E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\tjpgd.o" --omf_browse "..\OBJ\tjpgd.crf" --depend "..\OBJ\tjpgd.d")
+I (..\PICTURE\tjpgd.h)(0x528F544C)
+I (..\PICTURE\integer.h)(0x4BD31212)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\PICTURE\piclib.h)(0x528F54E4)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\PICTURE\bmp.h)(0x52906F8E)
+I (..\PICTURE\gif.h)(0x528F544C)
+F (..\APP\mp3player.c)(0x5577B6E0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\mp3player.o" --omf_browse "..\OBJ\mp3player.crf" --depend "..\OBJ\mp3player.d")
 I (..\APP\mp3player.h)(0x505BF2F6)
-F (..\APP\recorder.c)(0x505FC468)(-c --device DARMSTM -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -o "recorder.o" --depend "recorder.d")
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\VS10XX\vs10xx.h)(0x505BF382)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+I (..\HARDWARE\LED\led.h)(0x50513ABC)
+I (..\HARDWARE\KEY\key.h)(0x50518AA2)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\TEXT\text.h)(0x505A974C)
+I (..\TEXT\fontupd.h)(0x505A9714)
+I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x50F96150)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\fattester.h)(0x503CCFEE)
+I (..\HARDWARE\VS10XX\flac.h)(0x4E1491A0)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+I (..\APP\tea.h)(0x5577B64B)
+F (..\APP\recorder.c)(0x5578EB3F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\recorder.o" --omf_browse "..\OBJ\recorder.crf" --depend "..\OBJ\recorder.d")
 I (..\APP\recorder.h)(0x505FC468)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x50513B7A)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
+I (..\HARDWARE\KEY\key.h)(0x50518AA2)
+I (..\HARDWARE\LED\led.h)(0x50513ABC)
+I (..\HARDWARE\LCD\lcd.h)(0x5305D88A)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
+I (..\HARDWARE\VS10XX\vs10xx.h)(0x505BF382)
+I (..\MALLOC\malloc.h)(0x503CC504)
+I (..\FATFS\src\ff.h)(0x505BD406)
+I (..\FATFS\src\integer.h)(0x4BD31212)
+I (..\FATFS\src\ffconf.h)(0x50236DB2)
+I (..\FATFS\exfuns\exfuns.h)(0x503CCF24)
+I (..\TEXT\text.h)(0x505A974C)
+I (..\TEXT\fontupd.h)(0x505A9714)
+I (..\HARDWARE\TPAD\tpad.h)(0x5053EACA)
+I (..\APP\tea.h)(0x5577B64B)
+F (..\APP\tea.c)(0x557851D1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\DAC -I..\HARDWARE\DMA -I..\HARDWARE\IIC -I..\HARDWARE\24CXX -I..\HARDWARE\SPI -I..\HARDWARE\FLASH -I..\HARDWARE\TOUCH -I..\HARDWARE\REMOTE -I..\HARDWARE\ADXL345 -I..\HARDWARE\DS18B20 -I..\HARDWARE\NRF24L01 -I..\HARDWARE\SRAM -I..\MALLOC -I..\HARDWARE\SD -I..\FATFS\exfuns -I..\FATFS\src -I..\USMART -I..\FATFS\src\option -I..\TEXT -I..\PICTURE -I..\HARDWARE\VS10XX -I..\HARDWARE\AUDIOSEL -I..\HARDWARE\TPAD -I..\USER -I..\APP -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\tea.o" --omf_browse "..\OBJ\tea.crf" --depend "..\OBJ\tea.d")
+I (..\APP\tea.h)(0x5577B64B)
+I (..\SYSTEM\sys\sys.h)(0x505BD1CA)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x505FC036)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
