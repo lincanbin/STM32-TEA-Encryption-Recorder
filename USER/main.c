@@ -23,12 +23,7 @@
 #include "mp3player.h"
 #include "audiosel.h"
 #include "recorder.h"
-//ALIENTEK战舰STM32开发板实验45
-//录音机 实验  
-//技术支持：www.openedv.com
-//广州市星翼电子科技有限公司 
- 		    
-	
+
  int main(void)
  {	 
 	delay_init();	    	 //延时函数初始化	  
@@ -53,10 +48,10 @@
 		delay_ms(200);				  
 		LCD_Fill(60,50,240,66,WHITE);//清除显示	     
 	}
- 	Show_Str(60,50,200,16,"战舰 STM32开发板",16,0);				    	 
-	Show_Str(60,70,200,16,"WAV录音机实验",16,0);				    	 
-	Show_Str(60,90,200,16,"正点原子@ALIENTEK",16,0);				    	 
-	Show_Str(60,110,200,16,"2012年9月20日",16,0);
+ 	Show_Str(60,50,200,16,"Author: Canbin",16,0);				    	 
+	Show_Str(60,70,200,16,"TEA加密录音机",16,0);				    	 
+	Show_Str(60,90,200,16,"lincanbin@hotmail.com",16,0);				    	 
+	Show_Str(60,110,200,16,"2015年6月11日",16,0);
 	Show_Str(60,130,200,16,"KEY0:REC/PAUSE",16,0);
 	Show_Str(60,150,200,16,"KEY2:STOP&SAVE",16,0);
 	Show_Str(60,170,200,16,"KEY_UP:AGC+ KEY1:AGC-",16,0);
