@@ -10,6 +10,8 @@
 #include "exfuns.h"	    
 #include "text.h"	    
 #include "tpad.h"	    
+
+#include "tea.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK战舰STM32开发板
@@ -22,8 +24,7 @@
 //Copyright(C) 广州市星翼电子科技有限公司 2009-2019
 //All rights reserved								  						    								  
 //////////////////////////////////////////////////////////////////////////////////
-	
-
+extern u8 password;
 //VS1053的WAV录音有bug,这个plugin可以修正这个问题 							    
 const u16 wav_plugin[40]=/* Compressed plugin */ 
 { 
@@ -110,10 +111,13 @@ void recoder_show_agc(u8 agc)
 u8 rec_play_wav(u8 *pname)
 {	 
  	FIL* fmp3;
-    u16 br;
+  u16 br;
 	u8 res,rval=0;	  
 	u8 *databuf;	   		   
-	u16 i=0; 	 		  
+	u16 i=0; 	 		
+
+	u16 j=0; 
+  
 	fmp3=(FIL*)mymalloc(SRAMIN,sizeof(FIL));//申请内存
 	databuf=(u8*)mymalloc(SRAMIN,512);		//开辟512字节的内存区域
 	if(databuf==NULL||fmp3==NULL)rval=0XFF ;//内存申请失败.
@@ -126,16 +130,50 @@ u8 rec_play_wav(u8 *pname)
 		res=f_open(fmp3,(const TCHAR*)pname,FA_READ);//打开文件	 
  		if(res==0)//打开成功.
 		{ 
-			VS_SPI_SpeedHigh();	//高速						   
+			VS_SPI_SpeedHigh();	//高速	
+			
+			
+			//读掉wav文件头
+			f_read(fmp3,databuf,32,(UINT*)&br);
+			VS_Send_MusicData(databuf);
+			LCD_ShowString(170,270,200,16,16,(u8 *)databuf);
+			
+			f_read(fmp3,databuf,12,(UINT*)&br);
+			VS_Send_MusicData(databuf);
+			
 			while(rval==0)
 			{
-				res=f_read(fmp3,databuf,512,(UINT*)&br);//读出4096个字节  
+				res=f_read(fmp3,databuf,512,(UINT*)&br);//读出512个字节  
+				//Log
+				LCD_ShowxNum(20,290,j++,4,16,0X80);
+				//解密
+				
+				//LCD_ShowString(60,270,200,16,16,"                                         ");
+				LCD_ShowString(60,270,200,16,16,(u8 *)databuf);
+				
+				if(decrypt(databuf, 512, (u8 *)password) != 0){
+					//LCD_ShowString(60,290,200,16,16,"                                         ");
+					LCD_ShowString(60,290,200,16,16,(u8 *)databuf);
+				}else{
+					LCD_ShowString(60,290,200,16,16,"fail! ");
+				}
+				
+				
+				
 				i=0;
 				do//主播放循环
-			    {  	
-					if(VS_Send_MusicData(databuf+i)==0)i+=32;//给VS10XX发送音频数据
-				 	else recoder_show_time(VS_Get_DecodeTime());//显示播放时间	   	    
-				}while(i<512);//循环发送4096个字节 
+			  {
+					/*
+					decrypt(databuf+i, 32, (u8 *)password);
+					*/
+					if(VS_Send_MusicData(databuf+i)==0)
+						i+=32;//给VS10XX发送音频数据
+				 	else
+						recoder_show_time(VS_Get_DecodeTime());//显示播放时间	
+					
+					//lOG
+					//LCD_ShowxNum(20,290,i,4,16,0X80);
+				}while(i<512);//循环发送512个字节 
 				if(br!=512||res!=0)
 				{
 					rval=0;
@@ -246,10 +284,10 @@ u8 recoder_play(void)
 					break;
 			} 
 ///////////////////////////////////////////////////////////
-//读取数据			  
+			//读取数据			  
 			if(rec_sta==0X80)//已经在录音了
 			{
-		  		w=VS_RD_Reg(SPI_HDAT1);	
+		  	w=VS_RD_Reg(SPI_HDAT1);	
 				if((w>=256)&&(w<896))
 				{
 	 				idx=0;				   	 
@@ -258,8 +296,21 @@ u8 recoder_play(void)
 			 			w=VS_RD_Reg(SPI_HDAT0);				   	    
 		 				recbuf[idx++]=w&0XFF;
 						recbuf[idx++]=w>>8;
-					}	  		 
+					}
+					//加密
+					//LCD_ShowString(60,270,200,16,16,"                                         ");
+					LCD_ShowString(60,270,200,16,16,recbuf);
+					if(encrypt((u8 *)recbuf, 512, (u8 *)password) != 0){
+						//LCD_ShowString(60,290,200,16,16,"                                         ");
+						LCD_ShowString(60,290,200,16,16,recbuf);
+					}
+					//Log
+					LCD_ShowxNum(20,290,sectorsize,4,16,0X80);
+					
+					
 	 				res=f_write(f_rec,recbuf,512,&bw);//写入文件
+					//For Debug Only
+					//res=1;
 					if(res)
 					{
 						printf("err:%d\r\n",res);

@@ -324,7 +324,7 @@ u8 VS_Send_MusicData(u8* buf)
 	if(VS_DQ!=0)  //หอสýพÝธ๘VS10XX
 	{			   	 
 		VS_XDCS=0;  
-        for(n=0;n<32;n++)
+    for(n=0;n<32;n++)
 		{
 			VS_SPI_ReadWriteByte(buf[n]);	 			
 		}

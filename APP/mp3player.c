@@ -12,6 +12,8 @@
 #include "ff.h"   
 #include "flac.h"	
 #include "usart.h"	
+
+#include "tea.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK战舰STM32开发板
@@ -24,7 +26,7 @@
 //Copyright(C) 广州市星翼电子科技有限公司 2009-2019
 //All rights reserved								  						    								  
 //////////////////////////////////////////////////////////////////////////////////
-
+extern u8 password;
 //显示曲目索引
 //index:当前索引
 //total:总文件数
@@ -208,7 +210,7 @@ void mp3_play(void)
 //       2,上一曲
 //       0XFF,出现错误了
 u8 mp3_play_song(u8 *pname)
-{	 
+{
  	FIL* fmp3;
     u16 br;
 	u8 res,rval;	  
@@ -237,9 +239,16 @@ u8 mp3_play_song(u8 *pname)
 			while(rval==0)
 			{
 				res=f_read(fmp3,databuf,4096,(UINT*)&br);//读出4096个字节  
+				
+				//解密
+				decrypt(databuf, 4096, (u8 *)password);
+				
 				i=0;
 				do//主播放循环
-			    {  	
+			    {
+					
+						
+						
 					if(VS_Send_MusicData(databuf+i)==0)//给VS10XX发送音频数据
 					{
 						i+=32;
