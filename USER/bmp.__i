@@ -1,4 +1,0 @@
--c --device DARMSTM -g -O0 --apcs=interwork 
--I C:\Keil\ARM\RV31\INC 
--I C:\Keil\ARM\CMSIS\Include 
--o "bmp.o" --depend "bmp.d" "..\PICTURE\bmp.c"

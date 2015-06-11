@@ -1,4 +1,0 @@
--c --device DARMSTM -g -O0 --apcs=interwork 
--I C:\Keil\ARM\RV31\INC 
--I C:\Keil\ARM\CMSIS\Include 
--o "stm32f10x_rcc.o" --depend "stm32f10x_rcc.d" "..\STM32F10x_FWLib\src\stm32f10x_rcc.c"
