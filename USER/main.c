@@ -24,6 +24,20 @@
 #include "audiosel.h"
 #include "recorder.h"
 
+/*
+ * STM32-TEA-Encryption-Recorder
+ * https://github.com/lincanbin/STM32-TEA-Encryption-Recorder
+ *
+ * Copyright 2015, Canbin Lin(lincanbin@hotmail.com)
+ * http://www.94cb.com/
+ *
+ * Licensed under the Apache License, Version 2.0:
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * A STM32 encryption recorder that use Tiny Encryption Algorithm. 
+ */
+
+
  int main(void)
  {	 
 	delay_init();	    	 //延时函数初始化	  
