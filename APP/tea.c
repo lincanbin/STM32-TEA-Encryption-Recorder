@@ -13,22 +13,22 @@
 
 
 
-u8 password[16] = {0x01,0x09,0x08,0x09,0x00,0x06,0x00,0x04,0x01,0x09,0x08,0x09,0x00,0x06,0x00,0x04}; 
+u8 password[16] = { 0x01, 0x09, 0x08, 0x09, 0x00, 0x06, 0x00, 0x04, 0x01, 0x09, 0x08, 0x09, 0x00, 0x06, 0x00, 0x04 };
 
-static void tea_encrypt(u32 *v,u32 *k) 
+static void tea_encrypt(u32 *v, u32 *k)
 {
-  u32 y = v[0],z = v[1],sum = 0,i;        
-  u32 delta = 0x9e3779b9;                
-  u32 a = k[0],b = k[1],c = k[2],d = k[3];  
-  
-  for (i = 0;i < 32;i++) 
-  {                        
-    sum += delta;
-    y += ((z << 4) + a) ^ (z + sum) ^ ((z >> 5) + b);
-    z += ((y << 4) + c) ^ (y + sum) ^ ((y >> 5) + d);
-  }
-  v[0] = y;
-  v[1] = z;
+	u32 y = v[0], z = v[1], sum = 0, i;
+	u32 delta = 0x9e3779b9;
+	u32 a = k[0], b = k[1], c = k[2], d = k[3];
+
+	for (i = 0; i < 32; i++)
+	{
+		sum += delta;
+		y += ((z << 4) + a) ^ (z + sum) ^ ((z >> 5) + b);
+		z += ((y << 4) + c) ^ (y + sum) ^ ((y >> 5) + d);
+	}
+	v[0] = y;
+	v[1] = z;
 }
 
 /*********************************************************************
@@ -37,20 +37,20 @@ static void tea_encrypt(u32 *v,u32 *k)
 *     k:解密用的key,长度为16字节
 **********************************************************************/
 
-static void tea_decrypt(u32 *v,u32 *k) 
+static void tea_decrypt(u32 *v, u32 *k)
 {
-  u32 y = v[0],z = v[1],sum = 0xC6EF3720,i; 
-  u32 delta = 0x9e3779b9;            
-  u32 a = k[0],b = k[1],c = k[2],d = k[3];    
-  
-  for (i = 0;i < 32;i++) 
-  {                         
-    z -= ((y << 4) + c) ^ (y + sum) ^ ((y >> 5) + d);
-    y -= ((z << 4) + a) ^ (z + sum) ^ ((z >> 5) + b);
-    sum -= delta;                     
-  }
-  v[0] = y;
-  v[1] = z;
+	u32 y = v[0], z = v[1], sum = 0xC6EF3720, i;
+	u32 delta = 0x9e3779b9;
+	u32 a = k[0], b = k[1], c = k[2], d = k[3];
+
+	for (i = 0; i < 32; i++)
+	{
+		z -= ((y << 4) + c) ^ (y + sum) ^ ((y >> 5) + d);
+		y -= ((z << 4) + a) ^ (z + sum) ^ ((z >> 5) + b);
+		sum -= delta;
+	}
+	v[0] = y;
+	v[1] = z;
 }
 
 /*********************************************************************
@@ -61,30 +61,30 @@ static void tea_decrypt(u32 *v,u32 *k)
 *返回:密文的字节数
 **********************************************************************/
 
-u16 encrypt(u8 *src,u16 size_src,u8 *key)
+u16 encrypt(u8 *src, u16 size_src, u8 *key)
 {
-  u8 a = 0;
-  u16 i = 0;
-  u16 num = 0;
-  
-  //将明文补足为8字节的倍数
-  a = size_src % 8;
-  if (a != 0)
-  {
-    for (i = 0;i < 8 - a;i++)
-    {
-      src[size_src++] = 0;
-    }
-  }
-  
-  //加密
-  num = size_src / 8;
-  for (i = 0;i < num;i++)
-  {
-    tea_encrypt((u32 *)(src + i * 8),(u32 *)key);
-  }
-  
-  return size_src;
+	u8 a = 0;
+	u16 i = 0;
+	u16 num = 0;
+
+	//将明文补足为8字节的倍数
+	a = size_src % 8;
+	if (a != 0)
+	{
+		for (i = 0; i < 8 - a; i++)
+		{
+			src[size_src++] = 0;
+		}
+	}
+
+	//加密
+	num = size_src / 8;
+	for (i = 0; i < num; i++)
+	{
+		tea_encrypt((u32 *)(src + i * 8), (u32 *)key);
+	}
+
+	return size_src;
 }
 
 /*********************************************************************
@@ -97,21 +97,21 @@ u16 encrypt(u8 *src,u16 size_src,u8 *key)
 
 u16 decrypt(u8 *src, u16 size_src, u8 *key)
 {
-  u16 i = 0;
-  u16 num = 0;
-  
-  //判断长度是否为8的倍数
-  if (size_src % 8 != 0)
-  {
-    return 0;
-  }
-  
-  //解密
-  num = size_src / 8;
-  for (i = 0;i < num;i++)
-  {
-    tea_decrypt((u32 *)(src + i * 8),(u32 *)key);
-  }
-  
-  return size_src;
+	u16 i = 0;
+	u16 num = 0;
+
+	//判断长度是否为8的倍数
+	if (size_src % 8 != 0)
+	{
+		return 0;
+	}
+
+	//解密
+	num = size_src / 8;
+	for (i = 0; i < num; i++)
+	{
+		tea_decrypt((u32 *)(src + i * 8), (u32 *)key);
+	}
+
+	return size_src;
 }
