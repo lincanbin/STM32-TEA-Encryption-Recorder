@@ -22,11 +22,11 @@ Test case
 
 The audio waveform before encryption: 
 
-![before](https://github.com/lincanbin/STM32-TEA-Encryption-Recorder/blob/master/Screenshots/before.jpg)
+![before](https://github.com/lincanbin/STM32-TEA-Encryption-Recorder/blob/master/Screenshots/before.png)
 
 The encrypted audio waveform: 
 
-![after](https://github.com/lincanbin/STM32-TEA-Encryption-Recorder/blob/master/Screenshots/after.jpg)
+![after](https://github.com/lincanbin/STM32-TEA-Encryption-Recorder/blob/master/Screenshots/after.png)
 
 License
 ------------
